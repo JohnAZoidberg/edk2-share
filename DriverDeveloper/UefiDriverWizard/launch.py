@@ -49,7 +49,7 @@ class MyApp(wx.App):
     self.frame = frame
     self.SetTopWindow(frame)
     self.WorkspacePath = ''
-    icon = wx.Icon(os.path.join(os.path.abspath(sys.path[0]), 'Logo.ico'), wx.BITMAP_TYPE_ICO)
+    icon = wx.Icon(os.path.join(os.path.dirname(__file__), 'Logo.ico'), wx.BITMAP_TYPE_ICO)
 #    image = wx.Image(os.path.join(os.path.abspath(sys.path[0]), 'Logo.png'), wx.BITMAP_TYPE_PNG)
 #    image = image.Scale(40,40)
 #    icon = wx.IconFromBitmap (image.ConvertToBitmap())
